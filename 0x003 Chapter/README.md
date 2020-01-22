@@ -15,7 +15,7 @@ Enumeration is an attack phase where and performs directed queries to gain more 
 - Null session - An account who has no name and no password, but can connect on microsoft systems.
     - `net use \\<host>\ipc$ "" /u:""` - Connect to a remote host using null user
     - `net view \\<host>` - Show content from connected host
-- SNMP has a default of `public` to the read-only community, and `private` to the read/write community, try them. It runs on port 161.
+- SNMP has a default of `public` to the read-only community, and `private` to the read/write community, try them. It runs on port 161. OIDS:
     - Windows running processes - 1.3.6.1.2.1.25.4.2.1.2
     - Windows installed software - 1.3.6.1.2.1.25.6.3.1.2
     - Windows system info - 1.3.6.1.2.1.1.1
