@@ -163,7 +163,7 @@ www.routerpasswords.com
 
 `fpdns -D site.com.br`
 
-address that has periodicall reports of versions, top 100 hosts etc...:
+address that has periodical reports of versions, top 100 hosts etc...:
 https://ftp.isc.org/www/survey/reports/current/
 
 # nmap default scan
