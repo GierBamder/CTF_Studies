@@ -126,17 +126,21 @@ VRFY admin
 
 # SNMP enumeration
 
-Main goal is to extract data
-Default communities: public, private, manager
+Main goal is to extract data.
+
+Default communities: **public**, **private**, **manager**
 
 `nmap -v --open -sUV -p161 -Pn 192.168.10.102` #(-sUV resolves filtered ports's problem)
 
-Create a file with communities to use (eg: communities.txt)
+Create a file with every IP in a given network (except broadcast):
+
 ```shell
 for ip in $(seq 1 254); 
 do echo 192.168.10.$ip; 
 done >> ips
 ```
+Create a file with communities to use (eg: communities.txt), then:
+
 `onesixtyone -c comunities.txt -i hosts.txt`
 
 `snmpwalk -c public -v1 192.168.10.102 1.3.6.1.4.1.77.1.2.25` #(example mib for users in windows)
