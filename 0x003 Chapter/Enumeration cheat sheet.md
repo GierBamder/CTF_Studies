@@ -149,8 +149,6 @@ Create a file with communities to use (eg: communities.txt), then:
 
 # Default passwords
 
-www.defaultpassword.com
-
 www.routerpasswords.com
 
 # MySQL enumeration
